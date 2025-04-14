@@ -6,8 +6,6 @@ import H4 from './assets/homeimage/H4.webp'
 import H5 from './assets/homeimage/H5.png'
 import H6 from './assets/homeimage/H6.webp'
 import QT from './assets/homeimage/QT1.png';
-import QT2 from './assets/homeimage/QT2.png';
-
 import './App.css'
 import { useNavigate } from 'react-router-dom'
 
@@ -18,11 +16,11 @@ function Histoire() {
 
   const stories = [
     { img: H2, title: t('stories.1'), onClick: () => navigate('/zoe') },
-    { img: H1, title: t('stories.2'), onClick: () => alert('H2 clicked!') },
-    { img: H3, title: t('stories.3'), onClick: () => alert('H3 clicked!') },
-    { img: H4, title: t('stories.4'), onClick: () => alert('H4 clicked!') },
+    { img: H1, title: t('stories.2'), onClick: () => navigate('/stella') },
+    { img: H3, title: t('stories.3'), onClick: () => navigate('/nino') },
+    { img: H4, title: t('stories.4'), onClick: () => navigate('/leo') },
     { img: H5, title: t('stories.5'), onClick: () => navigate('/loup') },
-    { img: H6, title: t('stories.6'), onClick: () => alert('H6 clicked!') },
+    { img: H6, title: t('stories.6'), onClick: () => navigate('/max') },
   ]
 
   return (

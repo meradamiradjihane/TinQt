@@ -2,21 +2,20 @@ import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
 import LanguageDetector from 'i18next-browser-languagedetector'
 
-// On importe les fichiers de traduction
-import fr from './trad/fr.json'
-import en from './trad/en.json'
+import fr from './traduction/fr.json'
+import en from './traduction/en.json'
 
 i18n
-  .use(LanguageDetector) // détecte automatiquement la langue du navigateur
-  .use(initReactI18next) // lie i18next à React
+  .use(LanguageDetector) 
+  .use(initReactI18next) 
   .init({
     resources: {
       fr: { translation: fr },
       en: { translation: en }
     },
-    fallbackLng: 'fr', // si aucune langue détectée → français par défaut
+    fallbackLng: 'fr', 
     interpolation: {
-      escapeValue: false // sécurité pour React (évite l'encodage HTML)
+      escapeValue: false 
     }
   })
 

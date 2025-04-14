@@ -6,13 +6,16 @@ import cloud from './assets/homeimage/cloud1.png';
 import arbre from './assets/homeimage/arbre.png';
 import arbre2 from './assets/homeimage/arbre2.png';
 import herbe from './assets/homeimage/herbe.png';
-import QT from './assets/homeimage/QT1.png';
 import QT2 from './assets/homeimage/QT2.png';
-import His1 from './H1';
+import His1 from './Histoires/H1';
 import logo from './assets/homeimage/Logo.png'
 import franceFlag from './assets/homeimage/Flag_of_France.png' 
 import ukFlag from './assets/homeimage/Flag_of_the_United_Kingdom.png'
-import His5 from './H5';
+import His5 from './Histoires/H5';
+import His2 from './Histoires/H2';
+import His3 from './Histoires/H3';
+import His4 from './Histoires/H4';
+import His6 from './Histoires/H6';
 import { useTranslation } from 'react-i18next';
 function App() {
     const { t, i18n } = useTranslation()
@@ -70,7 +73,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Histoire />} />
         <Route path="/zoe" element={<His1 />} />
+        <Route path="/stella" element={<His2 />} />
+        <Route path="/nino" element={<His3/>} />
+        <Route path="/leo" element={<His4 />} />
         <Route path="/loup" element={<His5 />} />
+        <Route path="/max" element={<His6 />} />
       </Routes>
     </Router>
     </div>
